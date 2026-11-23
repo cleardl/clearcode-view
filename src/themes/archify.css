@@ -1,0 +1,14 @@
+.ccv[data-renderer="archify"] { box-shadow: 0 8px 28px #0206170b; }
+.ccv[data-renderer="archify"] .ccv-canvas { background-image: none; }
+.ccv[data-renderer="archify"] .ccv-canvas:has(svg[data-preset="classic"]) { background-image: radial-gradient(circle at 1px 1px, var(--canvas-dot) 1px, transparent 1.4px); background-size: 20px 20px; }
+.ccv[data-renderer="archify"] .ccv-stage svg { font-family: var(--ccv-font); }
+.ccv[data-renderer="archify"] .ccv-stage .ccv-element { transition: opacity 140ms ease; }
+.ccv[data-renderer="archify"] .ccv-stage .ccv-muted-element { opacity: .6; }
+.ccv[data-renderer="archify"] .ccv-stage .ccv-element:hover { opacity: 1; }
+.ccv[data-renderer="archify"] .ccv-stage .ccv-highlight[data-node-id] > :is(rect:not(.c-mask), path, circle, ellipse),
+.ccv[data-renderer="archify"] .ccv-stage .ccv-highlight > [data-graph-role="structural-frame"] { stroke-width: 2.5px !important; }
+.ccv[data-renderer="archify"] .ccv-stage :is(path.ccv-highlight, line.ccv-highlight),
+.ccv[data-renderer="archify"] .ccv-stage .ccv-highlight[data-edge-from] > :is(path, line) { stroke-width: 3px !important; }
+.ccv[data-renderer="archify"] .ccv-stage .ccv-highlight[data-edge-from] text { font-weight: 700; }
+.ccv[data-renderer="archify"] .ccv-stage [data-ccv-hit] { filter: none !important; }
+@media (prefers-reduced-motion: reduce) { .ccv[data-renderer="archify"] .ccv-stage .ccv-element { transition: none; } }

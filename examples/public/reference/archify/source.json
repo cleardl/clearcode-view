@@ -1,0 +1,618 @@
+{
+  "repository": "https://github.com/tt-a1i/archify",
+  "commit": "7e45f36c66de1254d5ad6ba1d878f6499ea269fd",
+  "files": [
+    {
+      "source": "archify/examples/sequence-cache-miss-request.html",
+      "file": "cache-miss.html",
+      "sha256": "49e750c91bb8a21a63db5f80f147bf4867cf938f75cbdd5a5da1e11b36a3d3ba",
+      "sourceJson": "archify/examples/cache-miss-request.sequence.json",
+      "sourceJsonSha256": "f8486daa803fff6c295cecca4604c561fbbf9acb2e83326022b5a87639e8afe6"
+    },
+    {
+      "source": "archify/LICENSE-MIT",
+      "file": "LICENSE-MIT.txt",
+      "sha256": "b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706"
+    },
+    {
+      "source": "archify/LICENSE",
+      "file": "LICENSE-APACHE-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "source": "archify/examples/web-app-rendered.html",
+      "file": "web-app.html",
+      "sha256": "ffabd084c754ee97ed9e9355ba19fab449533432537d6b8cdb5c6d276293741a",
+      "sourceJson": "archify/examples/web-app.architecture.json",
+      "sourceJsonSha256": "95e051b27a9e4a3307e194c0f666fca4af51470be7e2228d400ff48aea5b353b"
+    },
+    {
+      "source": "archify/examples/workflow-agent-tool-call-rendered.html",
+      "file": "tool-workflow.html",
+      "sha256": "6ee1999c899c2b7bed3b69b14e23dfbf9c7ff096441870361c690b469ad43e29",
+      "sourceJson": "archify/examples/agent-tool-call.workflow.json",
+      "sourceJsonSha256": "d67965d50872c97e4ff3476271e645bf19fab6b3ab44e111bdb44b063e3aa36f"
+    },
+    {
+      "source": "archify/NOTICE",
+      "file": "NOTICE.txt",
+      "sha256": "665eb53e6fcf09cee183c9f23c8052645dc95570d9ccbbf53dc0f5213a1b5edd"
+    },
+    {
+      "source": "archify/THIRD_PARTY_NOTICES.md",
+      "file": "THIRD_PARTY_NOTICES.md",
+      "sha256": "b5e129197f391568f7abf287c74b24f4835f10e5388f600407c8788feaeb9015"
+    },
+    {
+      "source": "archify/examples/production-deployment.architecture.json",
+      "file": "production-deployment.html",
+      "sha256": "fc81d8f4c6c341fc25aca7c84b647e39342829ed635099e6c43351fc9327bbe1",
+      "generatedFrom": "archify/examples/production-deployment.architecture.json",
+      "renderer": "archify/renderers/architecture/render-architecture.mjs",
+      "sourceJson": "archify/examples/production-deployment.architecture.json",
+      "sourceJsonSha256": "610a5614667e8f108bdcf1769c9d7af5c3ce0fb62be3ea50550b10eb752e4bda"
+    },
+    {
+      "source": "archify/examples/brand-aware-delivery.architecture.json",
+      "file": "brand-delivery.html",
+      "sha256": "88ceda092f441afab4e86417f5e00f0b580d2a42669d52f890c2670b35097063",
+      "generatedFrom": "archify/examples/brand-aware-delivery.architecture.json",
+      "renderer": "archify/renderers/architecture/render-architecture.mjs",
+      "sourceJson": "archify/examples/brand-aware-delivery.architecture.json",
+      "sourceJsonSha256": "211c126ebdc5f0124617b1067cecfb858143a1a18fd10621d01f5765c7de3b5d"
+    },
+    {
+      "source": "archify/examples/checkout-platform.base.architecture.json",
+      "file": "checkout-changes-before.html",
+      "sha256": "8a5a2a2f124a6069077dc3f1df7a126da6bccf5bd5b78ad08f7122c0ae7ab1ec",
+      "generatedFrom": "archify/examples/checkout-platform.base.architecture.json",
+      "renderer": "archify/renderers/architecture/render-architecture.mjs",
+      "sourceJson": "archify/examples/checkout-platform.base.architecture.json",
+      "sourceJsonSha256": "81d55a2e86fc39f6473b32dfba986a12d3b7a705a95821844865b1dc831c9fe7"
+    },
+    {
+      "source": "archify/examples/checkout-platform.head.architecture.json",
+      "file": "checkout-changes-after.html",
+      "sha256": "99173fe3732292a51c19d6e4b9988785d9f386091f88d80a978ac672e5f3f202",
+      "generatedFrom": "archify/examples/checkout-platform.head.architecture.json",
+      "renderer": "archify/renderers/architecture/render-architecture.mjs",
+      "sourceJson": "archify/examples/checkout-platform.head.architecture.json",
+      "sourceJsonSha256": "eb4ae056035dd3316414a5d7f6599525107b5d1af7bedbd905460ade77daf5c6"
+    },
+    {
+      "source": "archify/examples/release-delivery.workflow.json",
+      "file": "release-delivery.html",
+      "sha256": "c5d05dbb5b54309578398e5eb6080d93f6ef427d6c329b9cc12706f3b764a5b4",
+      "generatedFrom": "archify/examples/release-delivery.workflow.json",
+      "renderer": "archify/renderers/workflow/render-workflow.mjs",
+      "sourceJson": "archify/examples/release-delivery.workflow.json",
+      "sourceJsonSha256": "dbd5c174af66296caec372e7214cf4df7158b50a563508e16826b95ab8d1cd6c"
+    },
+    {
+      "source": "archify/examples/incident-response.workflow.json",
+      "file": "incident-response.html",
+      "sha256": "eaf5e220fcf22cf01c2c7660ddbaccb93e06f021c2ede6555868c27688ba125f",
+      "generatedFrom": "archify/examples/incident-response.workflow.json",
+      "renderer": "archify/renderers/workflow/render-workflow.mjs",
+      "sourceJson": "archify/examples/incident-response.workflow.json",
+      "sourceJsonSha256": "630be98449925d2716ecb8439f404b2bff5fe65ba905b0ad0baea6d96890c526"
+    },
+    {
+      "source": "archify/examples/holiday-planning.workflow.json",
+      "file": "holiday-planning.html",
+      "sha256": "1d335d653a1fe19ee82f44d81b1354e0c2e0e57ab9ad090b742a3830bc8e5c8d",
+      "generatedFrom": "archify/examples/holiday-planning.workflow.json",
+      "renderer": "archify/renderers/workflow/render-workflow.mjs",
+      "sourceJson": "archify/examples/holiday-planning.workflow.json",
+      "sourceJsonSha256": "b98354f921ca45842fed235db09fd4f19d94adc16865876f438c0d699d05e1ea"
+    },
+    {
+      "source": "archify/examples/async-job-roundtrip.sequence.json",
+      "file": "async-jobs.html",
+      "sha256": "7e9b78297ebde6f09ae3f828596152e00b8688d473db79154b8b11c365815aa1",
+      "generatedFrom": "archify/examples/async-job-roundtrip.sequence.json",
+      "renderer": "archify/renderers/sequence/render-sequence.mjs",
+      "sourceJson": "archify/examples/async-job-roundtrip.sequence.json",
+      "sourceJsonSha256": "b8c6c52f1763ede2933c77deb8da59b3e06917bc41d27e66df896136456b859a"
+    },
+    {
+      "source": "archify/examples/dataflow-product-analytics.html",
+      "file": "product-analytics.html",
+      "sha256": "f41d292adca854bf46e0114d1cb4e73566a667533c659467538a7fa4788d9897",
+      "sourceJson": "archify/examples/product-analytics.dataflow.json",
+      "sourceJsonSha256": "8a635db9e51a5b1a8d2955b9d66f5b9a450e0a298432ce8f2e2f0be11f372e05"
+    },
+    {
+      "source": "archify/examples/event-stream.dataflow.json",
+      "file": "event-stream.html",
+      "sha256": "fdf8371fdcb7ed7c9bbd90cdabe18a14a36f2ccb68e2b6144b2e6f287699087e",
+      "generatedFrom": "archify/examples/event-stream.dataflow.json",
+      "renderer": "archify/renderers/dataflow/render-dataflow.mjs",
+      "sourceJson": "archify/examples/event-stream.dataflow.json",
+      "sourceJsonSha256": "3bdd77674282009c7c68d588cf8a3c495bc98a3be1b9c45327fd1801a6f83a23"
+    },
+    {
+      "source": "archify/examples/lifecycle-agent-run.html",
+      "file": "agent-lifecycle.html",
+      "sha256": "ed4d735dc926b3c27324d0c174fe0607377722674d150b34a2fedce47459e111",
+      "sourceJson": "archify/examples/agent-run.lifecycle.json",
+      "sourceJsonSha256": "5ba36f5ce91ed428cb48b599e275424916d82b619b9a3231cbd1bbc3966fc54b"
+    },
+    {
+      "source": "archify/examples/deployment-release.lifecycle.json",
+      "file": "deployment-lifecycle.html",
+      "sha256": "09fcbf6b47e859f3d772bd7cf900df8b7adc84fc327f185d226022e23a843679",
+      "generatedFrom": "archify/examples/deployment-release.lifecycle.json",
+      "renderer": "archify/renderers/lifecycle/render-lifecycle.mjs",
+      "sourceJson": "archify/examples/deployment-release.lifecycle.json",
+      "sourceJsonSha256": "e3dc105d03c1c9881160006cdace23cb5d8533803e337caf0ec287c64e775275"
+    },
+    {
+      "source": "archify/examples/erd-orders-rendered.html",
+      "file": "orders-schema.html",
+      "sha256": "e97a501766ff355602f9e123ff2a11784d09ee473b9db296a79267a3508533d2",
+      "sourceJson": "archify/examples/orders.erd.json",
+      "sourceJsonSha256": "1777a374647084466f4d7ce3a968004be6ab70ac9cf82459b96bed7c556cdfdd"
+    },
+    {
+      "source": "archify/examples/subscription-billing-rendered.html",
+      "file": "billing-schema.html",
+      "sha256": "0cab0e29a347b6427cebb20c6c1d236e59cd7689ce7790e029101f7927c5a944",
+      "sourceJson": "archify/examples/subscription-billing.erd.json",
+      "sourceJsonSha256": "89945699d92b9cc0ab91263cf38a07c350867d260eacd5d8ba1dc835fe2d22ed"
+    },
+    {
+      "source": "archify/examples/class-payments-rendered.html",
+      "file": "payment-classes.html",
+      "sha256": "4749922e51166b7f855fd4f2070459a27641a1b429d52d5bcbdb9fa8e641d152",
+      "sourceJson": "archify/examples/payments.class.json",
+      "sourceJsonSha256": "afba837f97a041e14687cbe8893523232c4afad7afd922d9b128606d1b3f12c8"
+    },
+    {
+      "source": "archify/examples/class-payment-processors-rendered.html",
+      "file": "processor-hierarchy.html",
+      "sha256": "56d2f75d3e147acd4de44d23d1715d2d3a6c5f057c08b50dd3e1d35b7dd8a66e",
+      "sourceJson": "archify/examples/payment-processors.class.json",
+      "sourceJsonSha256": "98742b997db4782981460e8110e5fba899d8500c92c086aa867c5c62c3b89222"
+    },
+    {
+      "source": "archify/examples/tree-payment-platform-rendered.html",
+      "file": "payment-capabilities.html",
+      "sha256": "b79f07651f7d26eb8651e4c321d8396963d125ed66d2ec9bd86365284ddb472e",
+      "sourceJson": "archify/examples/payment-platform.tree.json",
+      "sourceJsonSha256": "1e99f37b3845d67fa97c9a2ff33109981c23bfdb0d03ba05b7d92944dcdfc61f"
+    },
+    {
+      "source": "archify/examples/tree-archify-repository-rendered.html",
+      "file": "repository-tree.html",
+      "sha256": "e1a68b7c1ae795994f29c8c9a3efcb91f616e637d0c8d5b95c179c2597345683",
+      "sourceJson": "archify/examples/archify-repository.tree.json",
+      "sourceJsonSha256": "970617ee844ecfb1bb792c677aa8b85688abfd2cf8ab2365dc03ea9e26e6b9c7"
+    },
+    {
+      "source": "archify/examples/timeline-payment-incident-rendered.html",
+      "file": "payment-incident.html",
+      "sha256": "46494b119b8637449a402ec05990b2b63a0ffc3b883a85a3d622656ce909260e",
+      "sourceJson": "archify/examples/payment-incident.timeline.json",
+      "sourceJsonSha256": "c1f535b3cc915ddd47ecd7df4e3ef02c441c8c3191daced5cf4422cff8dec95f"
+    },
+    {
+      "source": "archify/examples/timeline-archify-dev-activity-rendered.html",
+      "file": "repository-history.html",
+      "sha256": "f66dd976211353de010a43aec72205f6aad7dc53f1433a22e41c6eed391230b1",
+      "sourceJson": "archify/examples/archify-dev-activity.timeline.json",
+      "sourceJsonSha256": "e9c8d76528e8c38a68d9a8df2499c462f6b9633292ea43bf33350546ef2fd3a3"
+    },
+    {
+      "source": "archify/examples/waterfall-checkout-request-rendered.html",
+      "file": "checkout-waterfall.html",
+      "sha256": "74cb226d2a44be1482a824d08e6ca21d3b0353065118623c692ea651cd9e9759",
+      "sourceJson": "archify/examples/checkout-request.waterfall.json",
+      "sourceJsonSha256": "55a5f74699a0f0e44018a4a000556d43c90430b95f39accac6141af8318b5133"
+    },
+    {
+      "source": "archify/examples/waterfall-example-rebuild-rendered.html",
+      "file": "rebuild-waterfall.html",
+      "sha256": "6a7840b16ed9e8175f2f6eaa2ffbd9518e06a96b5ca0a5dafaaad874ca80ec70",
+      "sourceJson": "archify/examples/example-rebuild.waterfall.json",
+      "sourceJsonSha256": "77d610013a5aab031df739c207b66ebc26e1740371b51da06956ecf06b5e9929"
+    }
+  ],
+  "cases": [
+    {
+      "slug": "web-app",
+      "title": "Web 应用架构",
+      "category": "系统架构",
+      "focus": "区域、安全组、同步与异步依赖",
+      "file": "web-app.architecture.json",
+      "sources": [
+        {
+          "file": "web-app.architecture.json",
+          "type": "architecture",
+          "counts": {
+            "components": 10,
+            "connections": 9
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tool-workflow",
+      "title": "Agent 分层架构与流转",
+      "category": "流程与时序",
+      "focus": "四层职责、审批分支、返回与证据",
+      "file": "agent-tool-call.workflow.json",
+      "sources": [
+        {
+          "file": "agent-tool-call.workflow.json",
+          "type": "workflow",
+          "counts": {
+            "nodes": 12,
+            "edges": 11
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cache-miss",
+      "title": "缓存未命中时序",
+      "category": "流程与时序",
+      "focus": "调用、回复、激活与异步通知",
+      "file": "cache-miss-request.sequence.json",
+      "sources": [
+        {
+          "file": "cache-miss-request.sequence.json",
+          "type": "sequence",
+          "counts": {
+            "participants": 7,
+            "messages": 12
+          }
+        }
+      ]
+    },
+    {
+      "slug": "production-deployment",
+      "title": "生产部署与跨区域灾备",
+      "category": "系统架构",
+      "focus": "区域、私有网络、跨 AZ、灾备复制与运维归属",
+      "sources": [
+        {
+          "file": "production-deployment.architecture.json",
+          "type": "architecture",
+          "counts": {
+            "components": 12,
+            "connections": 12
+          }
+        }
+      ]
+    },
+    {
+      "slug": "brand-delivery",
+      "title": "AI 交付链与运行依赖",
+      "category": "系统架构",
+      "focus": "交付主线、运行依赖和 webhook 返回",
+      "sources": [
+        {
+          "file": "brand-aware-delivery.architecture.json",
+          "type": "architecture",
+          "counts": {
+            "components": 8,
+            "connections": 8
+          }
+        }
+      ]
+    },
+    {
+      "slug": "checkout-changes",
+      "title": "Checkout 架构变更前后",
+      "category": "系统架构",
+      "focus": "同范围前后版本、授权责任迁移",
+      "sources": [
+        {
+          "file": "checkout-platform.base.architecture.json",
+          "type": "architecture",
+          "counts": {
+            "components": 8,
+            "connections": 7
+          }
+        },
+        {
+          "file": "checkout-platform.head.architecture.json",
+          "type": "architecture",
+          "counts": {
+            "components": 8,
+            "connections": 7
+          }
+        }
+      ]
+    },
+    {
+      "slug": "release-delivery",
+      "title": "发布交付、质量门禁与回滚",
+      "category": "流程与时序",
+      "focus": "六方职责、停止条件与恢复回边",
+      "sources": [
+        {
+          "file": "release-delivery.workflow.json",
+          "type": "workflow",
+          "counts": {
+            "nodes": 10,
+            "edges": 10
+          }
+        }
+      ]
+    },
+    {
+      "slug": "incident-response",
+      "title": "故障响应与恢复证据",
+      "category": "流程与时序",
+      "focus": "故障指挥、缓解与恢复区分、升级旁路",
+      "sources": [
+        {
+          "file": "incident-response.workflow.json",
+          "type": "workflow",
+          "counts": {
+            "nodes": 11,
+            "edges": 10
+          }
+        }
+      ]
+    },
+    {
+      "slug": "holiday-planning",
+      "title": "假期与补班排期示例",
+      "category": "流程与时序",
+      "focus": "固定日期示例、非软件流程、主线与调休分支",
+      "sources": [
+        {
+          "file": "holiday-planning.workflow.json",
+          "type": "workflow",
+          "counts": {
+            "nodes": 5,
+            "edges": 4
+          }
+        }
+      ]
+    },
+    {
+      "slug": "async-jobs",
+      "title": "异步任务接纳、执行与结果对齐",
+      "category": "流程与时序",
+      "focus": "14 条消息、重试、先落库后通知、双观察路径",
+      "sources": [
+        {
+          "file": "async-job-roundtrip.sequence.json",
+          "type": "sequence",
+          "counts": {
+            "participants": 7,
+            "messages": 14
+          }
+        }
+      ]
+    },
+    {
+      "slug": "product-analytics",
+      "title": "产品分析数据流与 PII 分离",
+      "category": "数据流与模型",
+      "focus": "五阶段数据资产、敏感信息路径与派生消费者",
+      "sources": [
+        {
+          "file": "product-analytics.dataflow.json",
+          "type": "dataflow",
+          "counts": {
+            "nodes": 10,
+            "flows": 10
+          }
+        }
+      ]
+    },
+    {
+      "slug": "event-stream",
+      "title": "订单事件拓扑、死信与受控重放",
+      "category": "数据流与模型",
+      "focus": "12 个节点、分区键、消费组、DLQ 归属和审计重放",
+      "sources": [
+        {
+          "file": "event-stream.dataflow.json",
+          "type": "dataflow",
+          "counts": {
+            "nodes": 12,
+            "flows": 12
+          }
+        }
+      ]
+    },
+    {
+      "slug": "agent-lifecycle",
+      "title": "Agent 运行状态与恢复",
+      "category": "状态与层次",
+      "focus": "10 个状态、12 条转移、等待与终止区分",
+      "sources": [
+        {
+          "file": "agent-run.lifecycle.json",
+          "type": "lifecycle",
+          "counts": {
+            "states": 10,
+            "transitions": 12
+          }
+        }
+      ]
+    },
+    {
+      "slug": "deployment-lifecycle",
+      "title": "部署生命周期、健康暂停与回滚",
+      "category": "状态与层次",
+      "focus": "12 个状态、15 条转移、健康恢复与回滚失败",
+      "sources": [
+        {
+          "file": "deployment-release.lifecycle.json",
+          "type": "lifecycle",
+          "counts": {
+            "states": 12,
+            "transitions": 15
+          }
+        }
+      ]
+    },
+    {
+      "slug": "orders-schema",
+      "title": "订单管理数据库模型",
+      "category": "数据流与模型",
+      "focus": "完整字段、键角色、可选支付和识别关系",
+      "sources": [
+        {
+          "file": "orders.erd.json",
+          "type": "erd",
+          "counts": {
+            "entities": 6,
+            "relationships": 5,
+            "attributes": 36
+          }
+        }
+      ]
+    },
+    {
+      "slug": "billing-schema",
+      "title": "订阅计费与租户数据模型",
+      "category": "数据流与模型",
+      "focus": "11 张表、全量字段、租户隔离、账单与资金链",
+      "sources": [
+        {
+          "file": "subscription-billing.erd.json",
+          "type": "erd",
+          "counts": {
+            "entities": 11,
+            "relationships": 11,
+            "attributes": 64
+          }
+        }
+      ]
+    },
+    {
+      "slug": "payment-classes",
+      "title": "支付模块接口与渠道实现",
+      "category": "数据流与模型",
+      "focus": "依赖倒置、接口实现、成员签名",
+      "sources": [
+        {
+          "file": "payments.class.json",
+          "type": "class",
+          "counts": {
+            "relationships": 4,
+            "types": 5,
+            "attributes": 4,
+            "methods": 6
+          }
+        }
+      ]
+    },
+    {
+      "slug": "processor-hierarchy",
+      "title": "支付处理器、共享恢复与继承层次",
+      "category": "数据流与模型",
+      "focus": "接口、抽象类、组合、聚合、静态与抽象成员",
+      "sources": [
+        {
+          "file": "payment-processors.class.json",
+          "type": "class",
+          "counts": {
+            "relationships": 10,
+            "types": 11,
+            "attributes": 16,
+            "methods": 16
+          }
+        }
+      ]
+    },
+    {
+      "slug": "payment-capabilities",
+      "title": "支付平台能力分解树",
+      "category": "状态与层次",
+      "focus": "10 个节点、单父包含关系与调用关系区分",
+      "sources": [
+        {
+          "file": "payment-platform.tree.json",
+          "type": "tree",
+          "counts": {
+            "nodes": 10
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repository-tree",
+      "title": "Archify 仓库结构分解",
+      "category": "状态与层次",
+      "focus": "31 个节点、目录职责与源码导航",
+      "sources": [
+        {
+          "file": "archify-repository.tree.json",
+          "type": "tree",
+          "counts": {
+            "nodes": 31
+          }
+        }
+      ]
+    },
+    {
+      "slug": "payment-incident",
+      "title": "支付故障事件时间线",
+      "category": "时间与性能",
+      "focus": "固定时间轴、三类事件、恢复与关闭区分",
+      "sources": [
+        {
+          "file": "payment-incident.timeline.json",
+          "type": "timeline",
+          "counts": {
+            "events": 5
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repository-history",
+      "title": "Archify 发布与合并活动时间线",
+      "category": "时间与性能",
+      "focus": "20 个事件、多来源、时区对齐与密集记录",
+      "sources": [
+        {
+          "file": "archify-dev-activity.timeline.json",
+          "type": "timeline",
+          "counts": {
+            "events": 20
+          }
+        }
+      ]
+    },
+    {
+      "slug": "checkout-waterfall",
+      "title": "结账请求的并行执行瀑布",
+      "category": "时间与性能",
+      "focus": "6 个 span、并行区间、父子包络与总时长",
+      "sources": [
+        {
+          "file": "checkout-request.waterfall.json",
+          "type": "waterfall",
+          "counts": {
+            "spans": 6
+          }
+        }
+      ]
+    },
+    {
+      "slug": "rebuild-waterfall",
+      "title": "三 Worker 示例重建瀑布",
+      "category": "时间与性能",
+      "focus": "25 个 span、三方并发、嵌套 span 与实测小数",
+      "sources": [
+        {
+          "file": "example-rebuild.waterfall.json",
+          "type": "waterfall",
+          "counts": {
+            "spans": 25
+          }
+        }
+      ]
+    }
+  ]
+}

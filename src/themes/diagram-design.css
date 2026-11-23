@@ -1,0 +1,64 @@
+.ccv[data-renderer="diagram-design"] { box-shadow: none; }
+.ccv[data-renderer="diagram-design"] .ccv-canvas { background-image: none; }
+.ccv[data-renderer="diagram-design"] .ccv-stage svg { font-family: var(--ccv-font); }
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node .label-container,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > polygon,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > circle,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > ellipse,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > path,
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="participant"] rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="participant"] path,
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="participant"] circle {
+  fill: var(--ccv-design-node) !important; stroke: var(--ccv-muted) !important; stroke-width: 1px !important; filter: none !important;
+}
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > rect { rx: 6px; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .cluster > rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage .node > rect.composite {
+  fill: var(--ccv-canvas) !important; stroke: var(--ccv-border) !important; stroke-width: 1px !important; stroke-dasharray: 5 4; rx: 8px; filter: none !important;
+}
+.ccv[data-renderer="diagram-design"] .ccv-stage .cluster-label,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-layer > .label { color: var(--ccv-muted); }
+.ccv[data-renderer="diagram-design"] .ccv-stage .node text,
+.ccv[data-renderer="diagram-design"] .ccv-stage .nodeLabel,
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="participant"] text { fill: var(--ccv-text) !important; color: var(--ccv-text) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.flowchart-link,
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="message"] { stroke: var(--ccv-muted) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.flowchart-link:not(.edge-thickness-thick),
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="message"] { stroke-width: 1.2px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.edge-thickness-thick { stroke-width: 2px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="life-line"] { stroke: var(--ccv-design-soft) !important; stroke-width: 1px !important; stroke-dasharray: 4 6; opacity: .65; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .activation0,
+.ccv[data-renderer="diagram-design"] .ccv-stage .activation1,
+.ccv[data-renderer="diagram-design"] .ccv-stage .activation2 { fill: var(--ccv-soft) !important; stroke: var(--ccv-muted) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .loopLine { stroke: var(--ccv-border) !important; stroke-width: 1px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .labelBox,
+.ccv[data-renderer="diagram-design"] .ccv-stage .note { fill: var(--ccv-soft) !important; stroke: var(--ccv-border) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .messageText,
+.ccv[data-renderer="diagram-design"] .ccv-stage .noteText,
+.ccv[data-renderer="diagram-design"] .ccv-stage .loopText,
+.ccv[data-renderer="diagram-design"] .ccv-stage .labelText { fill: var(--ccv-text) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-element:focus-visible { outline-color: var(--ccv-accent); }
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node .label-container,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > polygon,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > circle,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > ellipse,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > path,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight[data-et="participant"] rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight[data-et="participant"] path,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight[data-et="participant"] circle { fill: color-mix(in srgb, var(--ccv-accent) 8%, var(--ccv-design-node)) !important; stroke: var(--ccv-accent) !important; stroke-width: 1.5px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.cluster > rect,
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-highlight.node > rect.composite { fill: var(--ccv-canvas) !important; stroke: var(--ccv-accent) !important; stroke-width: 1.5px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.ccv-highlight,
+.ccv[data-renderer="diagram-design"] .ccv-stage line.ccv-highlight { stroke: var(--ccv-accent) !important; stroke-width: 2px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.flowchart-link.ccv-highlight:not(.edge-thickness-thick),
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-et="message"].ccv-highlight { stroke-width: 2px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage path.edge-thickness-thick.ccv-highlight { stroke-width: 2.6px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage text.ccv-highlight { fill: var(--ccv-accent) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage .ccv-muted-element { opacity: .65; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-ccv-design-arrow] { stroke: var(--ccv-muted) !important; stroke-width: 1px !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-ccv-design-arrow="filled"] { fill: var(--ccv-muted) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-ccv-design-arrow="open"] { fill: none !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-ccv-design-arrow].ccv-highlight { stroke: var(--ccv-accent) !important; }
+.ccv[data-renderer="diagram-design"] .ccv-stage [data-ccv-design-arrow="filled"].ccv-highlight { fill: var(--ccv-accent) !important; }

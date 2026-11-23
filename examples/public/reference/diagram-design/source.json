@@ -1,0 +1,118 @@
+{
+  "repository": "https://github.com/cathrynlavery/diagram-design",
+  "commit": "f6db0decea96de66b901331a0f79a8d4b147ebae",
+  "format": "Self-contained HTML with inline SVG; no Markdown renderer from diagram-design.",
+  "preset": "Default light / faithful / engineer / doc-wide, sequence and layers use fit height.",
+  "generator": "scripts/build-design-comparisons.mjs",
+  "extraction": "Official Mermaid extractor checked flowchart, sequence and ER. Native Mermaid parser preserves participant aliases, activations and block data. No rendered Mermaid coordinates used.",
+  "designSources": [
+    {
+      "file": "skills/diagram-design/SKILL.md",
+      "sha256": "fba2015046dd6bfdd99b91c4b17c30bff5ebb3bd088de0e6863b41259c5026b8"
+    },
+    {
+      "file": "skills/diagram-design/references/style-guide.md",
+      "sha256": "320881ec802004384c09ce4f4f087b9242d926b08071d6b908160e14c707d155"
+    },
+    {
+      "file": "skills/diagram-design/references/import-mermaid.md",
+      "sha256": "9b70b177c97176624b63cb5fca83092a999c36213cb0bf061ed1e5e40a66d0e8"
+    },
+    {
+      "file": "skills/diagram-design/assets/template.html",
+      "sha256": "f6978a9d50dd286f32ab149bcf505261b9fc331df7320071f87509a285dee7f4"
+    }
+  ],
+  "files": [
+    {
+      "file": "web-app.html",
+      "input": "examples/compare/web-app.md",
+      "inputSha256": "7d8ad24c947b9f47630d421f7037a8eb4e999ac7151a328228959e7eae527716",
+      "sha256": "1582bc79932e1a4957bb546886c245a5adc58f540354cbdbc436564fd04e1967",
+      "counts": {
+        "nodes": 10,
+        "edges": 9,
+        "groups": 2
+      },
+      "removed": [],
+      "merged": [],
+      "collapsed": [],
+      "labelRewrites": [],
+      "layout": "Editorial SVG authored for this fixed example; Mermaid remains the input content."
+    },
+    {
+      "file": "tool-workflow.html",
+      "input": "examples/compare/tool-workflow.md",
+      "inputSha256": "a0ed95d7bb56fad3c09633b0711d2db505b32f4a62f74f68afca9e79cb1d1172",
+      "sha256": "3178ed9ff455558c9a8c8f9c6a99e95ebfd15565fccb6a8ba677a431a01dd838",
+      "counts": {
+        "nodes": 12,
+        "edges": 11,
+        "groups": 4
+      },
+      "removed": [],
+      "merged": [],
+      "collapsed": [],
+      "labelRewrites": [],
+      "layout": "Editorial SVG authored for this fixed example; Mermaid remains the input content."
+    },
+    {
+      "file": "cache-miss.html",
+      "input": "examples/compare/cache-miss.md",
+      "inputSha256": "178cce81dce601a6f2d74e7695e37849bd6a29beaea7402c68a8fd745384bde0",
+      "sha256": "c15905961d247024b5fb70367c86f1327658b976e59f29949f6fce9317acc1c7",
+      "counts": {
+        "nodes": 7,
+        "edges": 12,
+        "activations": 5,
+        "participantCopies": 14
+      },
+      "removed": [],
+      "merged": [],
+      "collapsed": [],
+      "labelRewrites": [],
+      "layout": "Editorial SVG authored for this fixed example; Mermaid remains the input content."
+    },
+    {
+      "file": "orders-schema.html",
+      "input": "examples/compare/orders-schema.md",
+      "inputSha256": "796727da008b5f36d941afd67255ca757e98c6f76f88e465c7c9f00806de2f42",
+      "sha256": "fed1a89ca7e7245c477bf6e81ffe87dc09aaf36196f3ecf223307464d5a31442",
+      "counts": {
+        "nodes": 6,
+        "edges": 5,
+        "attributes": 36
+      },
+      "removed": [],
+      "merged": [],
+      "collapsed": [],
+      "labelRewrites": [
+        {
+          "source": "payment_order",
+          "display": "Payments",
+          "from": "payment",
+          "to": "order"
+        },
+        {
+          "source": "order_item_order",
+          "display": "Order items",
+          "from": "order_item",
+          "to": "order"
+        },
+        {
+          "source": "order_item_product",
+          "display": "Product",
+          "from": "order_item",
+          "to": "product"
+        },
+        {
+          "source": "inventory_product",
+          "display": "Inventory",
+          "from": "inventory",
+          "to": "product"
+        }
+      ],
+      "layout": "Editorial SVG authored for this fixed example; Mermaid remains the input content."
+    }
+  ]
+}

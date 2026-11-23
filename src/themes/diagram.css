@@ -1,0 +1,50 @@
+.ccv[data-renderer="custom"] .ccv-stage { color: var(--ccv-text); }
+.ccv[data-renderer="custom"] .ccv-stage svg { font-family: var(--ccv-font); }
+.ccv[data-renderer="custom"] .ccv-stage .cluster > rect { fill: color-mix(in srgb, var(--ccv-soft) 65%, var(--ccv-canvas)) !important; stroke: var(--ccv-border) !important; stroke-dasharray: 6 4; rx: 12px; }
+.ccv[data-renderer="custom"] .ccv-stage .cluster-label text { fill: var(--ccv-muted) !important; font-size: 13px !important; font-weight: 650; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role].node .label-container,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role].node > rect,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role].node > polygon,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role].node path,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role][data-et="participant"] rect,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role][data-et="participant"] path,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role][data-et="participant"] circle {
+  fill: color-mix(in srgb, var(--ccv-element-color) 10%, var(--ccv-bg)) !important;
+  stroke: var(--ccv-element-color) !important;
+  stroke-width: 1.5px !important;
+}
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role][data-et="participant"] > line { stroke: var(--ccv-element-color) !important; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role].node text,
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-role][data-et="participant"] text { fill: var(--ccv-text) !important; font-weight: 600; }
+.ccv[data-renderer="custom"] .ccv-stage [data-et="life-line"] { stroke: var(--ccv-element-color, var(--ccv-muted)) !important; stroke-width: 1.1px !important; stroke-dasharray: 5 6; opacity: .42; }
+.ccv[data-renderer="custom"] .ccv-stage [data-et="message"], .ccv[data-renderer="custom"] .ccv-stage path.flowchart-link[data-ccv-role] { stroke: var(--ccv-element-color) !important; stroke-width: 1.8px; }
+.ccv[data-renderer="custom"] .ccv-stage .messageLine1 { stroke-dasharray: 6 4 !important; }
+.ccv[data-renderer="custom"] .ccv-stage text.messageText[data-ccv-role] { fill: var(--ccv-element-color) !important; }
+.ccv[data-renderer="custom"] .ccv-stage .activation0[data-ccv-role], .ccv[data-renderer="custom"] .ccv-stage .activation1[data-ccv-role], .ccv[data-renderer="custom"] .ccv-stage .activation2[data-ccv-role] { stroke: var(--ccv-element-color) !important; fill: color-mix(in srgb, var(--ccv-element-color) 18%, var(--ccv-bg)) !important; }
+.ccv[data-renderer="custom"] .ccv-stage .loopLine { stroke: var(--ccv-border) !important; stroke-width: 1px !important; stroke-dasharray: 7 4 !important; }
+.ccv[data-renderer="custom"] .ccv-stage .labelBox { fill: var(--ccv-soft) !important; stroke: var(--ccv-border) !important; }
+.ccv[data-renderer="custom"] .ccv-stage .labelText, .ccv[data-renderer="custom"] .ccv-stage .loopText, .ccv[data-renderer="custom"] .ccv-stage .labelText tspan, .ccv[data-renderer="custom"] .ccv-stage .loopText tspan { fill: var(--ccv-muted) !important; font-size: 13px !important; }
+.ccv[data-renderer="custom"] .ccv-stage rect.note { fill: color-mix(in srgb, var(--ccv-messagebus) 8%, var(--ccv-bg)) !important; stroke: color-mix(in srgb, var(--ccv-messagebus) 35%, var(--ccv-border)) !important; }
+.ccv[data-renderer="custom"] .ccv-stage .noteText, .ccv[data-renderer="custom"] .ccv-stage .noteText tspan { fill: var(--ccv-text) !important; font-size: 13px !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight.node .label-container,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight.node > rect,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight.node > polygon,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight.node path,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight[data-et="participant"] rect,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight[data-et="participant"] path,
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight[data-et="participant"] circle { stroke-width: 2.5px !important; filter: drop-shadow(0 0 3px color-mix(in srgb, var(--ccv-element-color, var(--ccv-accent)) 30%, transparent)); }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-highlight.cluster > rect { stroke: var(--ccv-accent) !important; stroke-width: 2px !important; }
+.ccv[data-renderer="custom"] .ccv-stage path.ccv-highlight, .ccv[data-renderer="custom"] .ccv-stage line.ccv-highlight { stroke: var(--ccv-element-color, var(--ccv-accent)) !important; stroke-width: 3px !important; opacity: 1; }
+.ccv[data-renderer="custom"] .ccv-stage text.ccv-highlight { fill: var(--ccv-element-color, var(--ccv-accent)) !important; font-weight: 700 !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-muted-element { opacity: .7; }
+.ccv[data-renderer="custom"] .ccv-stage path.edge-thickness-thick.ccv-highlight { stroke-width: 4px !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-element { transition: opacity 140ms ease; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-ref^="group:"].node > rect.composite { fill: color-mix(in srgb, var(--ccv-element-color, var(--ccv-accent)) 4%, var(--ccv-bg)) !important; stroke: var(--ccv-border) !important; stroke-width: 1px !important; rx: 12px; filter: none !important; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-ref].ccv-layer-heading > rect.label-container { fill: color-mix(in srgb, var(--ccv-element-color, var(--ccv-accent)) 12%, var(--ccv-bg)) !important; stroke: none !important; rx: 8px; filter: none !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-layer-heading .nodeLabel { font-weight: 650; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-ref].ccv-layer-heading.ccv-highlight > rect.label-container { stroke: var(--ccv-element-color, var(--ccv-accent)) !important; stroke-width: 2px !important; }
+.ccv[data-renderer="custom"] .ccv-stage [data-ccv-ref^="group:"].node.ccv-highlight > rect.composite { stroke: var(--ccv-element-color, var(--ccv-accent)) !important; stroke-width: 2px !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-layer > .label .nodeLabel { color: var(--ccv-muted); }
+.ccv[data-renderer="custom"][data-kind="block"] .ccv-stage path.edge-thickness-thick[data-ccv-role]:not(.ccv-highlight) { stroke-width: 3px !important; }
+.ccv[data-renderer="custom"] .ccv-stage .ccv-element:hover { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .ccv[data-renderer="custom"] .ccv-stage .ccv-element { transition: none; } }

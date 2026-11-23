@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+artifacts/
+**/.vitepress/cache/
+**/.vitepress/dist/
+**/.vuepress/.cache/
+**/.vuepress/.temp/
+**/.vuepress/dist/
+*.tgz
+*.log
+.DS_Store

@@ -1,0 +1,112 @@
+{
+  "name": "clearcode-view",
+  "version": "0.5.4",
+  "private": true,
+  "description": "Markdown and Mermaid technical documents with linked explanations and interactive walkthroughs",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vue": {
+      "types": "./dist/vue.d.ts",
+      "import": "./dist/vue.js"
+    },
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "import": "./dist/core.js"
+    },
+    "./mermaid": {
+      "types": "./dist/mermaid.d.ts",
+      "import": "./dist/mermaid.js"
+    },
+    "./renderers": {
+      "types": "./dist/renderers.d.ts",
+      "import": "./dist/renderers.js"
+    },
+    "./vitepress": {
+      "types": "./dist/vitepress.d.ts",
+      "import": "./dist/vitepress.js"
+    },
+    "./vitepress/theme": {
+      "types": "./dist/vitepress-theme.d.ts",
+      "import": "./dist/vitepress-theme.js"
+    },
+    "./style.css": "./dist/style.css",
+    "./themes": {
+      "types": "./dist/themes.d.ts",
+      "import": "./dist/themes.js"
+    }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vitepress dev examples --host 127.0.0.1 --port 5198 --strictPort",
+    "build:lib": "vite build && vue-tsc -p tsconfig.build.json",
+    "build:site": "vitepress build examples",
+    "build": "npm run build:lib && npm run build:site",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "check:docs": "node scripts/check-docs.mjs",
+    "check": "npm run typecheck && npm test && npm run build:lib && npm run check:docs"
+  },
+  "dependencies": {
+    "@mermaid-js/layout-elk": "1.0.2",
+    "@panzoom/panzoom": "4.6.2",
+    "dagre-d3-es": "7.0.14",
+    "elkjs": "0.12.1",
+    "markdown-it": "14.3.3",
+    "markdown-it-anchor": "10.1.0",
+    "markdown-it-attrs": "5.0.1",
+    "markdown-it-container": "4.0.0",
+    "mermaid": "12.3.0",
+    "yaml": "2.9.1",
+    "zod": "4.6.7"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.0"
+  },
+  "peerDependenciesMeta": {
+    "vitepress": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/markdown-it": "14.2.0",
+    "@types/node": "^25.0.0",
+    "@vitejs/plugin-vue": "6.0.10",
+    "jsdom": "29.1.1",
+    "postcss": "8.5.32",
+    "typescript": "6.0.3",
+    "vite": "8.3.8",
+    "vitepress": "1.6.4",
+    "vitest": "4.0.18",
+    "vue": "3.5.45",
+    "vue-tsc": "3.3.14"
+  },
+  "overrides": {
+    "@types/markdown-it": "$@types/markdown-it"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "SKILL.md",
+    "docs/",
+    "examples/**/*.md",
+    "examples/**/*.yaml",
+    "examples/public/reference/",
+    "examples/.vitepress/*.ts",
+    "examples/.vitepress/theme/*.ts",
+    "examples/.vitepress/components/*.vue",
+    "README.md"
+  ]
+}

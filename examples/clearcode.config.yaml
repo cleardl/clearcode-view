@@ -1,0 +1,79 @@
+version: 1
+title: clearcode-view
+navigation:
+  - label: 架构图
+    items:
+      - label: Web 应用
+        file: compare/web-app.md
+      - label: 跨区域部署
+        file: compare/production-deployment.md
+      - label: AI 交付链
+        file: compare/brand-delivery.md
+      - label: 结账架构变更
+        file: compare/checkout-changes.md
+      - label: Agent 分层
+        file: compare/tool-workflow.md
+      - label: 会话运行时
+        file: architecture.md
+  - label: 流程图
+    items:
+      - label: 故障响应
+        file: compare/incident-response.md
+      - label: 假期排期
+        file: compare/holiday-planning.md
+      - label: 重复事件排查
+        file: bug-analysis.md
+  - label: 泳道图
+    items:
+      - label: 发布与回滚
+        file: compare/release-delivery.md
+  - label: 时序图
+    items:
+      - label: 缓存未命中
+        file: compare/cache-miss.md
+      - label: 异步任务
+        file: compare/async-jobs.md
+      - label: 连接恢复
+        file: recovery-sequence.md
+  - label: 数据流图
+    items:
+      - label: 产品分析
+        file: compare/product-analytics.md
+      - label: 订单事件流
+        file: compare/event-stream.md
+  - label: 状态图
+    items:
+      - label: Agent 运行
+        file: compare/agent-lifecycle.md
+      - label: 部署生命周期
+        file: compare/deployment-lifecycle.md
+  - label: ER 图
+    items:
+      - label: 订单管理
+        file: compare/orders-schema.md
+      - label: 订阅计费
+        file: compare/billing-schema.md
+  - label: 类图
+    items:
+      - label: 支付接口
+        file: compare/payment-classes.md
+      - label: 处理器继承
+        file: compare/processor-hierarchy.md
+  - label: 树图
+    items:
+      - label: 支付平台
+        file: compare/payment-capabilities.md
+      - label: 项目目录
+        file: compare/repository-tree.md
+  - label: 时间线
+    items:
+      - label: 支付故障
+        file: compare/payment-incident.md
+      - label: 发布记录
+        file: compare/repository-history.md
+  - label: 瀑布图
+    items:
+      - label: 结账请求
+        file: compare/checkout-waterfall.md
+      - label: 并行重建
+        file: compare/rebuild-waterfall.md
